@@ -105,7 +105,7 @@ allParts.forEach((part, index) => {
         const layout = layoutMatch?.[1]?.trim() ?? 'cover'
         const mode = modeMatch?.[1]?.trim() ?? 'dark'
         sections.push(`__COVER_LAYOUT__:${layout}:${mode}`)
-        sections.push(fmMatch[2].trimEnd())
+        sections.push(fmMatch[2].trimEnd().replace(/\n---\s*$/, ''))
       } else {
         sections.push(`__COVER_LAYOUT__:cover:dark`)
         sections.push(rawContent.replace(/\n---\s*$/, ""))
