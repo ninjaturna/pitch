@@ -1,0 +1,15 @@
+:root {
+  --launch-bg: #ffffff;
+  --launch-ink: #111113;
+  --launch-blue: #1e5af2;
+  --launch-gold: #ffcc2d;
+  --launch-muted: #77706f;
+  --launch-border: #e5e5e5;
+}
+.slidev-layout.dark,
+.slidev-layout[data-mode="dark"] {
+  --launch-bg: #111113;
+  --launch-ink: #ffffff;
+  --launch-muted: #999999;
+  --launch-border: #2a2a2e;
+}

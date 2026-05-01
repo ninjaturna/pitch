@@ -1,0 +1,14 @@
+{
+  "name": "slidev-theme-launch",
+  "version": "0.1.0",
+  "main": "./index.ts",
+  "slidev": {
+    "defaults": {
+      "fonts": {
+        "sans": "DM Sans",
+        "mono": "DM Mono"
+      },
+      "colorSchema": "auto"
+    }
+  }
+}
