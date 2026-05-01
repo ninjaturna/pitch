@@ -1,5 +1,5 @@
 [build]
-publish = "dist"
+publish = "dist/hpi"
 command = "npm run build:hpi"
 
 [build.environment]
