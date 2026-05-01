@@ -1,0 +1,21 @@
+import { defineConfig } from 'unocss'
+
+export default defineConfig({
+  safelist: [],
+  preflights: [
+    {
+      getCSS: () => `
+        :root {
+          --launch-blue: #1E5AF2;
+          --launch-gold: #FFCC2D;
+          --launch-ink: #111113;
+          --launch-white: #FFFFFF;
+          --launch-offwhite: #F5F5F0;
+          --launch-gray: #E4E4E7;
+          --font-sans: 'DM Sans', system-ui, sans-serif;
+          --font-mono: 'DM Mono', monospace;
+        }
+      `
+    }
+  ]
+})
