@@ -185,6 +185,158 @@ We can develop a specific POV focusing on where Launch can help.
 
 ---
 
+## Layout Test Slides
+
+---
+
+### RAW 1 | STAT GRID
+
+---
+layout: stat-grid
+eyebrow: Why it works
+---
+# The case for Launch in numbers.
+
+<template v-slot:stats>
+<div class="stat">
+  <div><span class="num">$1</span><span class="unit">B</span></div>
+  <div class="label">HP productivity mandate by FY2028</div>
+</div>
+<div class="stat">
+  <div><span class="num">90</span><span class="unit">day</span></div>
+  <div class="label">Assessment-to-intervention cycle</div>
+</div>
+<div class="stat">
+  <div><span class="num">40</span><span class="unit">%</span></div>
+  <div class="label">Avg. friction reduction in SDLC</div>
+</div>
+</template>
+
+---
+
+### RAW 2 | TWO-PANE
+
+---
+layout: two-pane
+---
+
+<template v-slot:left>
+
+## The challenge
+
+# AI tools exist. The operating model hasn't caught up.
+
+Most enterprises have the tooling. The gap is adoption depth and workflow restructuring.
+
+</template>
+
+<div class="point">
+<div class="pt-label">Tool access</div>
+<p>Most enterprises have the tooling. The gap is adoption depth and workflow restructuring.</p>
+</div>
+<div class="point active">
+<div class="pt-label">The gap</div>
+<p>Work isn't defined so AI can amplify it. Engineers aren't structured around the tools.</p>
+</div>
+<div class="point">
+<div class="pt-label">The fix</div>
+<p>Start with an assessment. Establish the baseline. Let the data drive the intervention.</p>
+</div>
+
+---
+
+### RAW 3 | SECTION BREAK
+
+---
+layout: section-break
+sectionNum: '02'
+---
+# Where Launch sits in your organization.
+
+The layer above execution. The team that figures out what to build before tickets are written.
+
+---
+
+### RAW 4 | CASE STUDY
+
+---
+layout: case-study
+---
+
+## Case Study — UPS
+
+# Backlog growth outpacing the team's capacity to address it.
+
+Mapped the SDLC from intake to ship. Identified friction upstream of engineering. Built the operating conditions — backlog governance, definition-of-done alignment — that the delivery model needed.
+
+<template v-slot:outcomes>
+<div class="outcome">
+  <div class="o-label">Velocity</div>
+  <div class="o-val">2.4×</div>
+  <div class="o-desc">Sprint predictability improvement</div>
+</div>
+<div class="outcome">
+  <div class="o-label">Time-to-ship</div>
+  <div class="o-val">−38%</div>
+  <div class="o-desc">Reduction in cycle time</div>
+</div>
+<div class="outcome">
+  <div class="o-label">Rework rate</div>
+  <div class="o-val">−61%</div>
+  <div class="o-desc">Upstream definition fixes</div>
+</div>
+</template>
+
+<template v-slot:sidebar>
+<div class="s-block">
+  <div class="s-label">Client</div>
+  <div class="s-val">UPS — Global logistics, enterprise scale</div>
+</div>
+<div class="s-block">
+  <div class="s-label">Engagement</div>
+  <div class="s-val">SDLC friction diagnostic + operating model redesign</div>
+</div>
+<div class="s-block">
+  <div class="s-label">Tags</div>
+  <div>
+    <span class="tag">Logistics</span>
+    <span class="tag">Enterprise</span>
+    <span class="tag">SDLC</span>
+  </div>
+</div>
+</template>
+
+---
+
+### RAW 5 | STATEMENT
+
+---
+layout: statement
+---
+
+> Most backlogs don't have an *engineering problem*. They have a friction problem — and that friction almost never lives where everyone is looking.
+
+<div class="attribution">
+  <div class="attr-line"></div>
+  <div class="attr-name">Launch Friction Diagnostic Framework</div>
+</div>
+
+---
+
+### RAW 6 | FULL BLEED
+
+---
+layout: full-bleed
+---
+
+## The opportunity
+
+# The $1B mandate is set. How it gets delivered is the open question.
+
+Launch is the methodology layer that turns the commitment into a defensible execution plan — not a politically negotiated one.
+
+---
+
 ## Appendix
 
 ---

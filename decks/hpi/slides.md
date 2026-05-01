@@ -25,6 +25,7 @@ Open with the three observations. Pause after each. Land on the closing question
 
 ---
 layout: narrative
+mode: light
 eyebrow: WHERE LAUNCH SITS
 ---
 
@@ -48,6 +49,7 @@ The contrast with the apps team is explicit in the script but the apps team is n
 
 ---
 layout: narrative
+mode: light
 eyebrow: THE FRICTION DIAGNOSTIC
 ---
 
@@ -69,6 +71,7 @@ Uses the current Frictionless Enterprise pyramid (Ted's asset, same version Crai
 
 ---
 layout: narrative
+mode: light
 eyebrow: 'AI TOOLS AREN''T THE PROBLEM'
 ---
 
@@ -91,6 +94,7 @@ Sources: Jason's refreshed AI-Powered Development materials and the HCAI maturit
 
 ---
 layout: narrative
+mode: light
 eyebrow: CASE STUDY — UPS
 ---
 
@@ -110,6 +114,7 @@ Source: Launch 3.0 UPS case study. Ted owns story fluency. Craig has already con
 
 ---
 layout: narrative
+mode: light
 eyebrow: CASE STUDY — COVER MY MEDS
 ---
 
@@ -147,7 +152,148 @@ Listening posture is intentional — slide is minimal by design. Four questions 
 -->
 
 ---
+layout: stat-grid
+eyebrow: Why it works
+---
+# The case for Launch in numbers.
+
+<template v-slot:stats>
+<div class="stat">
+  <div><span class="num">$1</span><span class="unit">B</span></div>
+  <div class="label">HP productivity mandate by FY2028</div>
+</div>
+<div class="stat">
+  <div><span class="num">90</span><span class="unit">day</span></div>
+  <div class="label">Assessment-to-intervention cycle</div>
+</div>
+<div class="stat">
+  <div><span class="num">40</span><span class="unit">%</span></div>
+  <div class="label">Avg. friction reduction in SDLC</div>
+</div>
+</template>
+
+---
+
+---
+layout: two-pane
+---
+
+<template v-slot:left>
+
+## The challenge
+
+# AI tools exist. The operating model hasn't caught up.
+
+Most enterprises have the tooling. The gap is adoption depth and workflow restructuring.
+
+</template>
+
+<div class="point">
+<div class="pt-label">Tool access</div>
+<p>Most enterprises have the tooling. The gap is adoption depth and workflow restructuring.</p>
+</div>
+<div class="point active">
+<div class="pt-label">The gap</div>
+<p>Work isn't defined so AI can amplify it. Engineers aren't structured around the tools.</p>
+</div>
+<div class="point">
+<div class="pt-label">The fix</div>
+<p>Start with an assessment. Establish the baseline. Let the data drive the intervention.</p>
+</div>
+
+---
+
+---
+layout: section-break
+sectionNum: '02'
+---
+# Where Launch sits in your organization.
+
+The layer above execution. The team that figures out what to build before tickets are written.
+
+---
+
+---
+layout: case-study
+---
+
+## Case Study — UPS
+
+# Backlog growth outpacing the team's capacity to address it.
+
+Mapped the SDLC from intake to ship. Identified friction upstream of engineering. Built the operating conditions — backlog governance, definition-of-done alignment — that the delivery model needed.
+
+<template v-slot:outcomes>
+<div class="outcome">
+  <div class="o-label">Velocity</div>
+  <div class="o-val">2.4×</div>
+  <div class="o-desc">Sprint predictability improvement</div>
+</div>
+<div class="outcome">
+  <div class="o-label">Time-to-ship</div>
+  <div class="o-val">−38%</div>
+  <div class="o-desc">Reduction in cycle time</div>
+</div>
+<div class="outcome">
+  <div class="o-label">Rework rate</div>
+  <div class="o-val">−61%</div>
+  <div class="o-desc">Upstream definition fixes</div>
+</div>
+</template>
+
+<template v-slot:sidebar>
+<div class="s-block">
+  <div class="s-label">Client</div>
+  <div class="s-val">UPS — Global logistics, enterprise scale</div>
+</div>
+<div class="s-block">
+  <div class="s-label">Engagement</div>
+  <div class="s-val">SDLC friction diagnostic + operating model redesign</div>
+</div>
+<div class="s-block">
+  <div class="s-label">Tags</div>
+  <div>
+    <span class="tag">Logistics</span>
+    <span class="tag">Enterprise</span>
+    <span class="tag">SDLC</span>
+  </div>
+</div>
+</template>
+
+---
+
+---
+layout: statement
+---
+
+> Most backlogs don't have an *engineering problem*. They have a friction problem — and that friction almost never lives where everyone is looking.
+
+<div class="attribution">
+  <div class="attr-line"></div>
+  <div class="attr-name">Launch Friction Diagnostic Framework</div>
+</div>
+
+---
+
+---
+layout: full-bleed
+---
+
+## The opportunity
+
+# The $1B mandate is set. How it gets delivered is the open question.
+
+Launch is the methodology layer that turns the commitment into a defensible execution plan — not a politically negotiated one.
+
+---
+
+## Appendix
+
+---
+
+---
 layout: narrative
+mode: light
 eyebrow: APP RATIONALIZATION METHODOLOGY
 ---
 

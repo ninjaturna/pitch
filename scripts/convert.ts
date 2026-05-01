@@ -13,10 +13,10 @@ const outPath = resolve(`${outDir}/slides.md`)
 
 const raw = readFileSync(contentPath, 'utf-8')
 
-// Split into sections on ### SLIDE or ### APPENDIX headers
+// Split into sections on ### SLIDE, ### APPENDIX, or ### RAW headers
 const parts = raw
-  .split(/^(?=###\s+(?:SLIDE|APPENDIX)\s+)/m)
-  .filter(p => /^###\s+(?:SLIDE|APPENDIX)\s+/m.test(p))
+  .split(/^(?=###\s+(?:SLIDE|APPENDIX|RAW)\s+)/m)
+  .filter(p => /^###\s+(?:SLIDE|APPENDIX|RAW)\s+/m.test(p))
 
 function extractField(text: string, field: string): string {
   const regex = new RegExp(`\\*\\*${field}[^*]*\\*\\*\\s*\\n([\\s\\S]*?)(?=\\n\\*\\*|\\n>\\s*\\*\\*|$)`)
@@ -84,13 +84,20 @@ function buildSlideContent(part: string): string {
 }
 
 const mainParts = parts.filter(p => /^###\s+SLIDE\s+/m.test(p))
+const rawParts = parts.filter(p => /^###\s+RAW\s+/m.test(p))
 const appendixParts = parts.filter(p => /^###\s+APPENDIX\s+/m.test(p))
-const allParts = [...mainParts, ...appendixParts]
+const allParts = [...mainParts, ...rawParts, ...appendixParts]
 
 // Build slide sections — slide 0 layout goes in global frontmatter
 const sections: string[] = []
 
 allParts.forEach((part, index) => {
+  if (/^###\s+RAW\s+/m.test(part)) {
+    const rawContent = part.replace(/^###[^\n]*\n\n?/, '').trimEnd()
+    sections.push(rawContent)
+    return
+  }
+
   const headerMatch = part.match(/^###\s+(SLIDE|APPENDIX)\s+[\dA-Z]+\s*\|\s*(.+)$/m)
   const sectionType = headerMatch?.[1] ?? 'SLIDE'
   const title = headerMatch?.[2]?.trim() ?? ''
@@ -159,4 +166,4 @@ const output = [globalFrontmatter, slide0Content, ...remainingSlides].join('\n\n
 mkdirSync(outDir, { recursive: true })
 writeFileSync(outPath, output, 'utf-8')
 
-console.log(`✓ Converted ${name}: ${allParts.length} slides → decks/${name}/slides.md`)
+console.log(`✓ Converted ${name}: ${allParts.length} slides (${rawParts.length} raw) → decks/${name}/slides.md`)
