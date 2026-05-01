@@ -84,7 +84,6 @@ layout: two-pane
 The contrast with the apps team is explicit in the script but the apps team is not named on the slide. Apps is also NTT — read the room before leaning into the differentiation. Craig may have political sensitivity here.
 -->
 
----
 
 ---
 layout: statement-split
@@ -123,7 +122,6 @@ listHeading: Where friction actually lives
 Uses the current Frictionless Enterprise pyramid (Ted's asset). Friction examples are illustrative — Ted's source content should drive the on-slide examples in deck build.
 -->
 
----
 
 ---
 layout: three-things
@@ -168,7 +166,6 @@ GitHub Copilot has been available since 2022. The teams getting full value didn'
 Sources: Jason's refreshed AI-Powered Development materials and the HCAI maturity model. GitHub Copilot launch date (June 2022) confirmed from public record.
 -->
 
----
 
 ---
 layout: case-study
@@ -246,7 +243,6 @@ layout: case-study
 Source: Launch 3.0 UPS case study. Ted owns story fluency. Metrics bracketed — populate from Launch 3.0 library before deck build.
 -->
 
----
 
 ---
 layout: case-study
@@ -323,7 +319,6 @@ layout: case-study
 Source: Launch 3.0 CMM case study. Slide is conditional — included only if Monique is confirmed in the room. If not, moves to appendix. Confirm name and title before the meeting.
 -->
 
----
 
 ---
 layout: conversation
