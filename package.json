@@ -8,7 +8,7 @@
     "export": "slidev export",
     "convert": "tsx scripts/convert.ts",
     "dev:hpi": "npm run convert -- hpi && slidev decks/hpi/slides.md --open",
-    "build:hpi": "npm run convert -- hpi && slidev build decks/hpi/slides.md --out ../../dist/hpi",
+    "build:hpi": "npm run convert -- hpi && slidev build decks/hpi/slides.md --out ../../dist/hpi && mkdir -p dist/hpi/share && cp decks/hpi/share/index.html dist/hpi/share/index.html && cp public/hpi-deck.pdf dist/hpi/hpi-deck.pdf",
     "export:hpi": "slidev export decks/hpi/slides.md --output dist/hpi/hpi-deck.pdf --format pdf"
   },
   "dependencies": {
