@@ -108,11 +108,11 @@ allParts.forEach((part, index) => {
         sections.push(fmMatch[2].trimEnd())
       } else {
         sections.push(`__COVER_LAYOUT__:cover:dark`)
-        sections.push(rawContent)
+        sections.push(rawContent.replace(/\n---\s*$/, ""))
       }
       return
     }
-    sections.push(rawContent)
+    sections.push(rawContent.replace(/\n---\s*$/, ""))
     return
   }
 
