@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
 
+/* ── Base layout ── */
 .slidev-layout {
   font-family: var(--font-sans);
   background: var(--launch-ink);
@@ -8,39 +9,64 @@
   height: 100%;
   width: 100%;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
+/* ── Typography ── */
 .slidev-layout h1 {
   font-size: 2.8rem;
   font-weight: 700;
   line-height: 1.1;
   color: var(--launch-white);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  margin-top: 0;
 }
 
 .slidev-layout h2 {
-  font-size: 1.1rem;
-  font-weight: 500;
+  font-size: 0.85rem;
+  font-weight: 600;
   color: var(--launch-gold);
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 2rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
 }
 
-.slidev-layout p,
+.slidev-layout p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 0.5rem;
+}
+
+.slidev-layout ul,
+.slidev-layout ol {
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
 .slidev-layout li {
   font-size: 1rem;
   line-height: 1.6;
   color: rgba(255,255,255,0.85);
+  margin-bottom: 0.35rem;
+  list-style-type: disc;
 }
 
-.accent-bar {
-  width: 3rem;
-  height: 4px;
-  background: var(--launch-blue);
-  margin-bottom: 1.5rem;
+.slidev-layout strong {
+  color: var(--launch-white);
+  font-weight: 600;
 }
 
+.slidev-layout blockquote {
+  border-left: 3px solid var(--launch-blue);
+  padding-left: 1rem;
+  color: rgba(255,255,255,0.6);
+  font-style: normal;
+  margin: 0 0 1.5rem 0;
+}
+
+/* ── Cover layout ── */
 .slidev-layout.cover {
   display: flex;
   flex-direction: column;
@@ -76,12 +102,15 @@
   color: var(--launch-blue);
 }
 
+/* ── Narrative layout ── */
 .slidev-layout.narrative {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding-right: 4rem;
 }
 
+/* ── Closing layout ── */
 .slidev-layout.closing {
   display: flex;
   flex-direction: column;

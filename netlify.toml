@@ -6,6 +6,16 @@ command = "npm run build:hpi"
 NODE_VERSION = "20"
 
 [[redirects]]
+from = "/share"
+to = "/share.html"
+status = 200
+
+[[redirects]]
+from = "/hpi-deck.pdf"
+to = "/hpi-deck.pdf"
+status = 200
+
+[[redirects]]
 from = "/.well-known/*"
 to = "/.well-known/:splat"
 status = 200

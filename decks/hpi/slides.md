@@ -25,7 +25,6 @@ Open with the three observations. Pause after each. Land on the closing question
 
 ---
 layout: narrative
-mode: light
 eyebrow: WHERE LAUNCH SITS
 ---
 
@@ -49,7 +48,6 @@ The contrast with the apps team is explicit in the script but the apps team is n
 
 ---
 layout: narrative
-mode: light
 eyebrow: THE FRICTION DIAGNOSTIC
 ---
 
@@ -71,7 +69,6 @@ Uses the current Frictionless Enterprise pyramid (Ted's asset, same version Crai
 
 ---
 layout: narrative
-mode: light
 eyebrow: 'AI TOOLS AREN''T THE PROBLEM'
 ---
 
@@ -94,7 +91,6 @@ Sources: Jason's refreshed AI-Powered Development materials and the HCAI maturit
 
 ---
 layout: narrative
-mode: light
 eyebrow: CASE STUDY — UPS
 ---
 
@@ -114,7 +110,6 @@ Source: Launch 3.0 UPS case study. Ted owns story fluency. Craig has already con
 
 ---
 layout: narrative
-mode: light
 eyebrow: CASE STUDY — COVER MY MEDS
 ---
 
@@ -153,7 +148,6 @@ Listening posture is intentional — slide is minimal by design. Four questions 
 
 ---
 layout: narrative
-mode: light
 eyebrow: APP RATIONALIZATION METHODOLOGY
 ---
 
