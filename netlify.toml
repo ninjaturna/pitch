@@ -9,6 +9,7 @@ NODE_VERSION = "20"
 from = "/share"
 to = "/share.html"
 status = 200
+force = true
 
 [[redirects]]
 from = "/hpi-deck.pdf"
