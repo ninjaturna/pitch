@@ -9,7 +9,7 @@
     "convert": "tsx scripts/convert.ts",
     "dev:hpi": "npm run convert -- hpi && slidev decks/hpi/slides.md --open",
     "build:hpi": "npm run convert -- hpi && slidev build decks/hpi/slides.md --out ../../dist/hpi",
-    "export:hpi": "slidev export decks/hpi/slides.md"
+    "export:hpi": "slidev export decks/hpi/slides.md --output dist/hpi/hpi-deck.pdf --format pdf"
   },
   "dependencies": {
     "@slidev/cli": "^52.15.0",

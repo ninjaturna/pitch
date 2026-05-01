@@ -142,7 +142,7 @@ const slide0Content = sections[1]
 const remainingSlides = sections.slice(2)
 
 const globalFrontmatter = `---
-theme: ./themes/launch
+theme: ../../themes/launch
 title: 'HP Inc × Launch'
 info: |
   ## HPI Pitch

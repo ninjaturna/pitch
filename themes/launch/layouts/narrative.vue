@@ -1,8 +1,14 @@
 <template>
-  <div class="slidev-layout narrative" :data-mode="$frontmatter.mode || 'light'">
+  <div class="slidev-layout narrative">
     <div class="accent-bar" />
-    <div class="eyebrow">{{ $frontmatter.eyebrow || 'Launch' }}</div>
     <slot />
-    <div class="footer">Launch · HP Inc · April 2026</div>
   </div>
 </template>
+
+<style scoped>
+.narrative {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+</style>

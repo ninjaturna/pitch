@@ -1,5 +1,5 @@
 ---
-theme: ./themes/launch
+theme: ../../themes/launch
 title: 'HP Inc × Launch'
 info: |
   ## HPI Pitch
