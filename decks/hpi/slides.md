@@ -48,8 +48,6 @@ Open with the three observations. Pause after each. Land on the closing question
 -->
 
 ---
-
----
 layout: two-pane
 ---
 
