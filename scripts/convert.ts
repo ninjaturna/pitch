@@ -90,10 +90,28 @@ const allParts = [...mainParts, ...rawParts, ...appendixParts]
 
 // Build slide sections — slide 0 layout goes in global frontmatter
 const sections: string[] = []
+let rawCoverFm = ''
 
 allParts.forEach((part, index) => {
   if (/^###\s+RAW\s+/m.test(part)) {
     const rawContent = part.replace(/^###[^\n]*\n\n?/, '').trimEnd()
+    if (index === 0) {
+      // First slide is RAW — extract its frontmatter to merge into global config
+      const fmMatch = rawContent.match(/^---\n([\s\S]*?)\n---\n\n?([\s\S]*)/)
+      if (fmMatch) {
+        rawCoverFm = fmMatch[1].trim()
+        const layoutMatch = rawCoverFm.match(/^layout:\s*(.+)$/m)
+        const modeMatch = rawCoverFm.match(/^mode:\s*(.+)$/m)
+        const layout = layoutMatch?.[1]?.trim() ?? 'cover'
+        const mode = modeMatch?.[1]?.trim() ?? 'dark'
+        sections.push(`__COVER_LAYOUT__:${layout}:${mode}`)
+        sections.push(fmMatch[2].trimEnd())
+      } else {
+        sections.push(`__COVER_LAYOUT__:cover:dark`)
+        sections.push(rawContent)
+      }
+      return
+    }
     sections.push(rawContent)
     return
   }
@@ -148,6 +166,11 @@ const coverMode = coverInfo[2]
 const slide0Content = sections[1]
 const remainingSlides = sections.slice(2)
 
+// Extra frontmatter props from first RAW block's frontmatter (e.g. client, footer)
+const extraFm = rawCoverFm
+  ? '\n' + rawCoverFm.split('\n').filter(l => !/^(layout|mode):/.test(l)).join('\n').trim()
+  : ''
+
 const globalFrontmatter = `---
 theme: ../../themes/launch
 title: 'HP Inc × Launch'
@@ -158,7 +181,7 @@ class: text-left
 transition: slide-left
 mdc: true
 layout: ${coverLayout}
-mode: ${coverMode}
+mode: ${coverMode}${extraFm}
 ---`
 
 const output = [globalFrontmatter, slide0Content, ...remainingSlides].join('\n\n')
