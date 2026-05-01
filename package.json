@@ -8,7 +8,7 @@
     "export": "slidev export",
     "convert": "tsx scripts/convert.ts",
     "dev:hpi": "npm run convert -- hpi && slidev decks/hpi/slides.md --open",
-    "build:hpi": "npm run convert -- hpi && slidev build decks/hpi/slides.md --base /hpi/ --out ../../dist/hpi",
+    "build:hpi": "npm run convert -- hpi && slidev build decks/hpi/slides.md --out ../../dist/hpi",
     "export:hpi": "slidev export decks/hpi/slides.md"
   },
   "dependencies": {
