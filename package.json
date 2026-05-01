@@ -5,12 +5,20 @@
   "scripts": {
     "build": "slidev build",
     "dev": "slidev --open",
-    "export": "slidev export"
+    "export": "slidev export",
+    "convert": "tsx scripts/convert.ts",
+    "dev:hpi": "npm run convert -- hpi && slidev decks/hpi/slides.md --open",
+    "build:hpi": "npm run convert -- hpi && slidev build decks/hpi/slides.md --base /hpi/ --out ../../dist/hpi",
+    "export:hpi": "slidev export decks/hpi/slides.md"
   },
   "dependencies": {
     "@slidev/cli": "^52.15.0",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
     "vue": "^3.5.33"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "gray-matter": "^4.0.3"
   }
 }

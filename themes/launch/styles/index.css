@@ -1,0 +1,23 @@
+@import './tokens.css';
+
+.slidev-layout {
+  background: var(--launch-bg);
+  color: var(--launch-ink);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  padding: 4rem 5rem;
+}
+.slidev-layout h1 { font-size: 3rem; font-weight: 600; line-height: 1.1; letter-spacing: -0.02em; }
+.slidev-layout h2 { font-size: 1.5rem; font-weight: 500; color: var(--launch-muted); }
+.slidev-layout .eyebrow {
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--launch-blue);
+  margin-bottom: 1.5rem;
+}
+.slidev-layout .accent-bar {
+  width: 4px; height: 100%; background: var(--launch-blue);
+  position: absolute; left: 0; top: 0;
+}
+.slidev-layout .footer {
+  position: absolute; bottom: 1.5rem; left: 5rem;
+  font-size: 0.75rem; color: var(--launch-muted);
+}
