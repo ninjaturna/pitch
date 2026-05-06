@@ -9,6 +9,6 @@
       <slot name="cards" />
     </div>
     <div v-if="$frontmatter.footer" class="oc-footer">{{ $frontmatter.footer }}</div>
-    <img class="layout-logo" src="/logo-white.svg" alt="Launch by NTT DATA">
+    <img class="layout-logo" src="../logo-white.svg" alt="Launch by NTT DATA">
   </div>
 </template>
