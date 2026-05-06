@@ -9,5 +9,6 @@
       <slot name="cells" />
     </div>
     <div v-if="$frontmatter.footerBar" class="tt-footer-bar" v-html="$frontmatter.footerBar"></div>
+    <img class="layout-logo" src="/logo-white.svg" alt="Launch by NTT DATA">
   </div>
 </template>

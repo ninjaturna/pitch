@@ -10,7 +10,7 @@
     </div>
     <div class="cv-footer">
       <div v-if="$frontmatter.cta" class="cv-cta">{{ $frontmatter.cta }}</div>
-      <div class="cv-brand"><span>Launch</span> | NTT DATA</div>
     </div>
+    <img class="layout-logo" src="/logo-white.svg" alt="Launch by NTT DATA">
   </div>
 </template>

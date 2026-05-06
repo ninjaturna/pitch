@@ -5,5 +5,6 @@
     <div class="sg-stats">
       <slot name="stats" />
     </div>
+    <img class="layout-logo" src="/logo-white.svg" alt="Launch by NTT DATA">
   </div>
 </template>

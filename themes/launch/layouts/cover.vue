@@ -4,11 +4,6 @@
     <div class="content">
       <slot />
     </div>
-    <div class="footer">
-      <span class="logo">Launch</span>
-      <span class="divider">|</span>
-      <span class="byline">NTT DATA</span>
-    </div>
+    <img class="layout-logo" src="/logo-white.svg" alt="Launch by NTT DATA">
   </div>
 </template>
-
