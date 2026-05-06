@@ -3,7 +3,9 @@
 
 **Prepared for Internal Review | April 2026**
 
-> v7 — Fact-checked April 29, voice pass April 30. Internal review only — not for HPI. Case study metrics bracketed for Launch 3.0 sourcing before deck build.
+> v8 — Voice pass complete. Ready for deck build.
+> [FLAG: Case study metrics TBD — UPS (velocity, cycle time, rework rate) and CMM (prioritization, alignment, outcome) pending Launch 3.0 sourcing. Ted/Jason to provide before any client-facing build.]
+> [FLAG: CMM slide (RAW 5) conditional on Monique attendance — confirm name and title before the meeting. Move to appendix if she is not in the room.]
 
 ---
 
@@ -21,7 +23,7 @@ footer: Before we say anything about us — does that frame match where you are?
 
 <template v-slot:heading>
 
-# Where HP Stands Today
+# Where HP Stands Today.
 
 </template>
 
@@ -34,23 +36,23 @@ Three observations about HP's current moment, before we say anything about Launc
 <template v-slot:cards>
 <div class="oc-card">
   <div class="oc-card-label">01 — Mandate</div>
-  <div class="oc-card-title">A $1B mandate, on the clock</div>
+  <div class="oc-card-title">A $1B mandate, on the clock.</div>
   <div class="oc-card-body">HP has committed to $1B in productivity gains through AI-enabled transformation by FY2028. The target is set. How development delivers it is the open question.</div>
 </div>
 <div class="oc-card">
   <div class="oc-card-label">02 — Partnership</div>
-  <div class="oc-card-title">A development partnership, growing more complex</div>
+  <div class="oc-card-title">A development partnership, growing more complex.</div>
   <div class="oc-card-body">NTT has supported HP's development organization for years. The relationship has grown, and so has the gap between headcount on the floor and what actually ships.</div>
 </div>
 <div class="oc-card">
   <div class="oc-card-label">03 — Initiative</div>
-  <div class="oc-card-title">A live initiative asking the harder question</div>
+  <div class="oc-card-title">A live initiative asking the harder question.</div>
   <div class="oc-card-body">Project Armor is in motion. The hard question inside it is methodology — what stays, what consolidates, what sunsets, and on what basis. The answer decides whether the program produces a defensible roadmap or a politically negotiated one.</div>
 </div>
 </template>
 
 <!--
-Open with the three observations. Pause after each. Land on the closing question and let the room respond before advancing. Project Armor is named here intentionally — Craig confirmed pre-meeting framing supports it.
+Open with the three observations. Pause after each. Land on the footer question and let the room respond before advancing. Project Armor is named here intentionally — Craig confirmed pre-meeting framing supports it. Do not rush this slide.
 -->
 
 ---
@@ -63,9 +65,9 @@ layout: two-pane
 
 <template v-slot:left>
 
-## The layer above execution
+## The layer above execution.
 
-# Where Launch Sits
+# Where Launch Sits.
 
 <div class="s1-bullets">
   <div class="s1-bullet">Launch works upstream of delivery</div>
@@ -89,7 +91,7 @@ layout: two-pane
 </div>
 
 <!--
-The contrast with the apps team is explicit in the script but the apps team is not named on the slide. Apps is also NTT — read the room before leaning into the differentiation. Craig may have political sensitivity here.
+The contrast with the apps team is explicit in the script but the apps team is not named on the slide. Apps is also NTT — read the room before leaning into the differentiation. Craig may have political sensitivity here. If the room is warm, lean in. If not, keep it abstract.
 -->
 
 ---
@@ -130,7 +132,7 @@ listHeading: Where friction actually lives
 </div>
 
 <!--
-Uses the current Frictionless Enterprise pyramid (Ted's asset). Friction examples are illustrative — Ted's source content should drive the on-slide examples in deck build.
+Uses the current Frictionless Enterprise pyramid (Ted's asset). Friction examples are illustrative — Ted's source content should drive the on-slide examples if the asset is refreshed before the meeting. The four locations are the argument; don't shortcut through them.
 -->
 
 ---
@@ -177,7 +179,7 @@ GitHub Copilot has been available since 2022. The teams getting full value didn'
 </template>
 
 <!--
-Sources: Jason's refreshed AI-Powered Development materials and the HCAI maturity model. GitHub Copilot launch date (June 2022) confirmed from public record.
+Sources: Jason's refreshed AI-Powered Development materials and the HCAI maturity model. GitHub Copilot availability date (June 2022) confirmed from public record. The footer bar names the 90-day engagement — this is the natural bridge into the close. Let HP respond to the three cells before landing on it.
 -->
 
 ---
@@ -257,7 +259,8 @@ layout: case-study
 </template>
 
 <!--
-Source: Launch 3.0 UPS case study. Ted owns story fluency. Metrics bracketed — populate from Launch 3.0 library before deck build.
+Source: Launch 3.0 UPS case study. Ted owns story fluency.
+[FLAG: All three metrics (velocity, cycle time, rework rate) are TBD — do not present this deck to HP until populated. Pull from Launch 3.0 library. If metrics are not available before the meeting, consider removing the outcomes section or replacing with qualitative outcome statements.]
 -->
 
 ---
@@ -336,7 +339,9 @@ layout: case-study
 </template>
 
 <!--
-Source: Launch 3.0 CMM case study. Slide is conditional — included only if Monique is confirmed in the room. If not, moves to appendix. Confirm name and title before the meeting.
+Source: Launch 3.0 CMM case study.
+[FLAG: This slide is CONDITIONAL — include in the deck only if Monique is confirmed in the room. If she is not attending, move this slide to the appendix before the meeting. Confirm her name and title with Craig before finalizing the run-of-show.]
+[FLAG: All three metrics TBD — same sourcing requirement as UPS slide.]
 -->
 
 ---
@@ -351,7 +356,7 @@ cta: We can develop a specific POV focusing on where Launch can help.
 
 <template v-slot:heading>
 
-# The Conversation Worth Having
+# The Conversation Worth Having.
 
 </template>
 
@@ -381,18 +386,63 @@ The rest of this time is yours. We want to learn where you feel friction.
 </template>
 
 <!--
-Listening posture is intentional — slide is minimal by design. Four questions map to the three opportunity tracks plus Project Armor. Sequence based on who Craig confirms is in the room.
+Listening posture is intentional — the slide is minimal by design. Four questions map to the three opportunity tracks plus Project Armor. Sequence them based on who Craig confirms is in the room. If the conversation goes long before this slide, cut Q3 or Q4 — the most important ones are Q1 and Q4.
 -->
 
-### APPENDIX 7 | APP RATIONALIZATION METHODOLOGY
+---
 
-**HEADING**
-App Rationalization Methodology
+### RAW 7 | CLOSE
 
-**SUBHEADING**
+---
+layout: closing
+---
+
+Ready to map where friction lives in HP's engineering cycle.
+
+<!--
+Brand close. Let it breathe. If the conversation is still running, hold here until the room wraps naturally. When it does, this is the last thing they see. No action items, no follow-up list — that comes via email. The slide does one job: end on the Launch brand.
+-->
+
+---
+
+## Appendix
+
+---
+
+### RAW 8 | APP RATIONALIZATION METHODOLOGY
+
+---
+layout: narrative
+---
+
+## App Rationalization Methodology.
+
 When the question "which apps do we keep" becomes "how do we decide," Launch is the layer that builds the answer.
 
-**BODY**
-- The challenge — app sprawl is the symptom. The structural problem is decision methodology. Without one, the rationalization roadmap reflects organizational politics, not strategic value. That's how rationalization programs stall.
-- The approach — Launch builds the decision framework: the criteria, the weighting, the data inputs, and the governance that holds up under executive review. We're not the team that decommissions the apps. We're the team that makes the decommissioning decisions defensible.
-- Why this position matters — the execution body has an incentive to grow the application footprint, not shrink it. An independent advisory layer has the opposite incentive structure, and produces a different recommendation set as a result.
+<div class="ss-item">
+  <div class="ss-item-num">01</div>
+  <div class="ss-item-text"><strong>The challenge</strong> — app sprawl is the symptom. The structural problem is decision methodology. Without one, the rationalization roadmap reflects organizational politics, not strategic value. That's how rationalization programs stall.</div>
+</div>
+<div class="ss-item">
+  <div class="ss-item-num">02</div>
+  <div class="ss-item-text"><strong>The approach</strong> — Launch builds the decision framework: the criteria, the weighting, the data inputs, and the governance that holds up under executive review. We're not the team that decommissions the apps. We're the team that makes the decommissioning decisions defensible.</div>
+</div>
+<div class="ss-item">
+  <div class="ss-item-num">03</div>
+  <div class="ss-item-text"><strong>Why this position matters</strong> — the execution body has an incentive to grow the application footprint, not shrink it. An independent advisory layer has the opposite incentive structure, and produces a different recommendation set as a result.</div>
+</div>
+
+<!--
+Appendix slide — pull forward into the main deck if Project Armor surfaces app rationalization as a live decision in the meeting. Craig is the signal — if he brings up the rationalization question before RAW 6, this is the slide to have ready. Otherwise it stays in appendix.
+-->
+
+---
+
+## Open Items Before Client-Facing Build
+
+The following must be resolved before this deck is shown to HP:
+
+1. **UPS metrics** — velocity, cycle time, rework rate. Source: Ted/Jason via Launch 3.0 library.
+2. **CMM metrics** — prioritization improvement, alignment outcome, overall outcome. Source: Ted/Jason via Launch 3.0 library.
+3. **Monique attendance** — confirm with Craig whether she is in the room. If not, move RAW 5 to appendix before the meeting.
+4. **Monique's title** — confirm full name and title before any version of the deck references her or her team explicitly in the room.
